@@ -1,0 +1,5 @@
+.profile-card {
+  @apply bg-cover bg-center bg-no-repeat;
+
+  height: 500px;
+}
