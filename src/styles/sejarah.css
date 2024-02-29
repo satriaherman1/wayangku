@@ -1,0 +1,11 @@
+.table-of-contents {
+  @apply mt-3   ml-2;
+}
+
+.table-of-contents > a {
+  @apply text-gray-700 px-2 border-l-2 py-1;
+}
+
+.table-of-contents > a.active {
+  @apply text-green-700  border-green-700 font-medium;
+}

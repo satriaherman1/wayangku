@@ -1,3 +1,5 @@
+import Footer from "@src/components/footer";
+import Navbar from "@src/components/navbar";
 import CreatingProcess from "@src/containers/home/creating-process";
 
 import "@src/styles/cube.css";
@@ -14,6 +16,7 @@ export default function Home() {
 
   return (
     <div className="relative">
+      <Navbar className="text-white" />
       <main>
         <div
           style={bgImage}
@@ -44,7 +47,7 @@ export default function Home() {
           className="mt-20 mb-[200px] md:mb-[300px] flex flex-col-reverse md:flex-row md:items-center md:justify-between text-white relative z-10 container mx-auto px-4"
         >
           <p className="text-xl text-center md:text-left md:text-4xl basis-[48%] font-semibold">
-            Wayang kulit (Jawa: ꦮꦪꦁ​ꦏꦸꦭꦶꦠ꧀) adalah bentuk tradisional dari
+            Wayang kulit (Jawa: ꦮꦪꦁꦏꦸꦭꦶꦠ꧀) adalah bentuk tradisional dari
             kesenian wayang yang aslinya ditemukan dalam budaya{" "}
             <span className="text-yellow-500"> Jawa dan Bali </span> di
             Indonesia. Narasi wayang kulit seringkali berkaitan dengan tema
@@ -60,7 +63,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" flex flex-col text-white  z-10 container mx-auto px-4  top-0 pb-20 sticky overflow-y-auto bottom-0">
+        <div className=" flex flex-col text-white  z-10 container mx-auto px-4  top-0 pb-20 sticky ">
           <div>
             <img
               src="/images/home/wayang2.jpg"
@@ -90,6 +93,8 @@ export default function Home() {
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>
+
+      <Footer />
     </div>
   );
 }

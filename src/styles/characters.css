@@ -1,0 +1,37 @@
+.characters-album {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.characters-album:hover .photo-list {
+  transform: scale(1.2);
+}
+
+.photo-list {
+  @apply bg-cover bg-no-repeat bg-center w-[100%] h-[100%];
+  transition: 0.4s;
+}
+
+.characters-album:hover .photo-desc {
+  opacity: 1;
+}
+
+.characters-album:hover .photo-desc > div {
+  bottom: 20%;
+}
+
+.photo-desc {
+  @apply absolute  w-full h-full top-0;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: #23232337;
+}
+
+.photo-desc > div {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
