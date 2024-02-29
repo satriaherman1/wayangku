@@ -10,13 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "disqus-react": "^1.1.5",
     "gsap": "^3.12.5",
     "path": "^0.12.7",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-photo-album": "^2.3.1",
     "react-router-dom": "^6.22.1",
+    "react-tsparticles": "^2.12.2",
     "swiper": "^11.0.6",
     "tsparticles": "^3.3.0",
     "tsparticles-preset-snow": "^2.12.0"

@@ -1,11 +1,12 @@
 import Footer from "@src/components/footer";
 import Navbar from "@src/components/navbar";
 import "@src/styles/sejarah.css";
+import { DiscussionEmbed } from "disqus-react";
 import { FaFacebookF, FaInstagram, FaRegCopy } from "react-icons/fa";
 
 export default function Sejarah() {
   const bgImage = {
-    backgroundImage: `url('/images/home/landing.svg')`,
+    backgroundImage: `url('/images/wayang/dalang.jpeg')`,
   };
   return (
     <div>
@@ -19,7 +20,7 @@ export default function Sejarah() {
 
       <div
         style={bgImage}
-        className="bg-cover bg-center bg-no-repeat w-full h-[70vh]"
+        className="bg-cover bg-center bg-no-repeat w-full h-[70vh] container"
       ></div>
 
       <div className="container px-3 py-10 flex flex-col-reverse md:flex-row gap-y-10 justify-between">
@@ -140,6 +141,18 @@ export default function Sejarah() {
             <button className="p-3 rounded-md text-white bg-pink-600">
               <FaInstagram />
             </button>
+          </div>
+
+          <div className="mt-16">
+            <DiscussionEmbed
+              shortname="wayangku"
+              config={{
+                url: "https://localhost:5173/sejarah",
+                identifier: "9",
+                title: "Wayangku",
+                language: "id", //e.g. for Traditional Chinese (Taiwan)
+              }}
+            />
           </div>
         </section>
         <section className="basis-full md:basis-[36%] ">

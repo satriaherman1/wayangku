@@ -2,7 +2,8 @@ export default function CreatingProcess() {
   return (
     <div className="py-10 container mx-auto px-3 relative z-10">
       <h1 className="text-center md:py-[300px] font-poppins font-bold text-2xl md:text-8xl ">
-        Proses Pembuatan <br /> Wayang Kulit
+        Proses <span className="bg-yellow-500 font-poppins">Pembuatan</span>{" "}
+        <br /> Wayang Kulit
       </h1>
 
       <div className="mt-20 flex flex-col gap-y-20 md:gap-y-[120px]">

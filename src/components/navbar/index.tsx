@@ -66,6 +66,9 @@ export default function Navbar({ className }: Props) {
               Tokoh
             </Link>
           </span>
+          <span>
+            <div id="google_translate_element"></div>
+          </span>
         </div>
       </div>
       {isOpen && (

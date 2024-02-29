@@ -1,6 +1,8 @@
 .characters-album {
   cursor: pointer;
   overflow: hidden;
+  position: relative;
+  z-index: 20;
 }
 
 .characters-album:hover .photo-list {
@@ -17,14 +19,14 @@
 }
 
 .characters-album:hover .photo-desc > div {
-  bottom: 20%;
+  bottom: 10%;
 }
 
 .photo-desc {
-  @apply absolute  w-full h-full top-0;
+  @apply absolute  w-full h-full top-0 bg-gradient-to-t from-black;
   opacity: 0;
   transition: 0.3s;
-  background-color: #23232337;
+  /* background: linear-gradient(to top); */
 }
 
 .photo-desc > div {
@@ -34,4 +36,5 @@
   left: 50%;
   transform: translateX(-50%);
   transition: 0.3s;
+  background: line;
 }

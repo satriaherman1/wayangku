@@ -1,6 +1,8 @@
 import Navbar from "@src/components/navbar";
 import PhotoAlbum from "react-photo-album";
 
+import Footer from "@src/components/footer";
+import ParticleBg from "@src/components/particle-bg";
 import "@src/styles/characters.css";
 
 export default function Characters() {
@@ -18,7 +20,7 @@ export default function Characters() {
       title: "Semar",
     },
     {
-      src: "/images/wayang/semar.jpg",
+      src: "/images/wayang/petruk.jpg",
       width: 900,
       height: 980,
       title: "Semar",
@@ -41,7 +43,7 @@ export default function Characters() {
     <div className="bg-black min-h-[100vh] text-white">
       <Navbar className="text-white" />
 
-      <main className="container mx-auto px-3">
+      <main className="container mx-auto px-3 ">
         <h1 className="text-center font-poppins font-bold text-2xl md:text-4xl pt-[160px]">
           Tokoh Wayang di Jawa
         </h1>
@@ -49,11 +51,11 @@ export default function Characters() {
           Beberapa Tokoh Wayang Terkenal
         </p>
 
-        <div className="mt-5">
+        <div className="mt-16">
           <PhotoAlbum
             layout="masonry"
             photos={photos}
-            renderPhoto={({ photo, wrapperStyle, renderDefaultPhoto }) => (
+            renderPhoto={({ photo, wrapperStyle }) => (
               <div
                 style={{ position: "relative", ...wrapperStyle }}
                 className="characters-album"
@@ -64,11 +66,11 @@ export default function Characters() {
                 ></div>
                 <div className="photo-desc">
                   <div className="w-full">
-                    <div className="py-2 ">
+                    {/* <div className="py-2 ">
                       <h2 className=" text-md md:text-2xl font-semibold font-poppins">
                         {photo.title}
                       </h2>
-                    </div>
+                    </div> */}
                     <button className="mt-5 border py-2 px-4 rounded-md font-poppins">
                       Detail
                     </button>
@@ -79,6 +81,10 @@ export default function Characters() {
           />
         </div>
       </main>
+
+      <ParticleBg />
+
+      <Footer className="mt-20" />
     </div>
   );
 }
